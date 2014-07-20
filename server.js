@@ -10,8 +10,8 @@ require('./app/routes')(app);
 app.set('views', './app/views');
 app.set('view engine', 'jade');
 app.set('view options', {doctype: 'html'});
-app.use(require('serve-static')(path.join(rootPath, 'public')));
 
+app.use(express.static(path.join(__dirname, "public")));
 
 var server = app.listen(port, function() {
 	console.log('info', 'Server listening on port ', port);
