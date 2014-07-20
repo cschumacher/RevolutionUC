@@ -1,0 +1,14 @@
+{
+	"name" : "RevUC",
+	"version" : "0.0.0",
+	"description": "RevolutionUC website 2014",
+	"main" : "server.js",
+	"author" : "Curt Schumacher",
+	"dependencies" : {
+			"express" : "",
+			"mongoose" : "",
+			"jade" : "",
+			"stylus" : "",
+			"serve-static" : ""
+		}
+}

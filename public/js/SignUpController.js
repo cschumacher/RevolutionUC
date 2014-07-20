@@ -3,7 +3,7 @@ angular.module('RevUc', ['ui.bootstrap'])
 	
 	$scope.open = function () {
 		var modalInstance = $modal.open({
-			templateUrl: './signup.html',
+			templateUrl: './signup.jade',
 			controller: 'SignUpInstanceCtrl',
 			size: 'lg'
 		});

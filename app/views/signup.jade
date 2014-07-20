@@ -14,15 +14,15 @@ br
 			div.form-group
 				label.col-sm-2.control-label(for="university") University
 				div.col-sm-10
-					input.form-control(type="text", id="university", name="university", placeholder="University of Cincinnati" ng-model="uni")
-			div.form-group.animate-show(ng-show="uni == 'University of Cincinnati'")
+					input.form-control(type="text", id="university", name="university", placeholder="University of Cincinnati", ng-model="uni")
+			div.form-group(ng-show="uni == 'University of Cincinnati'")
 				label.col-sm-2.control-label(for="college") College
 				div.col-sm-10
-					input.form-control#college(type="text" placeholder="DAAP, CEAS, CECH, etc.")
+					input.form-control#college(type="text", placeholder="DAAP, CEAS, CECH, etc.")
 			div.form-group
 				label.col-sm-2.control-label(for="major") Major
 				div.col-sm-10
-					input.form-control#major(type="text" placeholder="Sith Lord")
+					input.form-control#major(type="text", placeholder="Sith Lord")
 			div.form-group
 				label.col-sm-2.control-label(for="gender") Gender
 				div.col-sm-10
@@ -36,9 +36,9 @@ br
 				div.col-sm-10
 					textarea.form-control#bio(rows="4", placeholder="Include links and a little bit about yourself.")
 			div.form-group
-				label(for="diet" class="col-sm-2 control-label") Dietary Restrictions
+				label.col-sm-2.control-label(for="diet") Diet
 				div.col-sm-10
-					input.form-control#diet(type="text" placeholder="Gluten free, Vegetarian, Eggs, and Tomatoes")
+					input.form-control#diet(type="text", placeholder="Gluten free, Vegetarian, Eggs, and Tomatoes")
 			div.form-group
 				label.col-sm-2.control-label(for="resume") Resumé
 				div.col-sm-10
