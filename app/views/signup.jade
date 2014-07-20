@@ -1,50 +1,50 @@
 div(style="width: 75%; margin: 0 auto;", role="main")
 h1 Sign-up
-br
-br
-	form.form-horizontal(role="form", name="signupform")
+<br />
+<br />
+form.form-horizontal(role="form", name="signupform")
+	div.form-group
+		label.col-sm-2.control-label(for="name") Name
+		div.col-sm-10
+			input.form-control#name(type="text", placeholder="Darth Vader")
 		div.form-group
-			label.col-sm-2.control-label(for="name") Name
+			label.col-sm-2.control-label(for="email") Email
 			div.col-sm-10
-				input.form-control#name(type="text", placeholder="Darth Vader")
-			div.form-group
-				label.col-sm-2.control-label(for="email") Email
-				div.col-sm-10
-					input.form-control(type="email", id="email", placeholder="dvader@mail.uc.edu")
-			div.form-group
-				label.col-sm-2.control-label(for="university") University
-				div.col-sm-10
-					input.form-control(type="text", id="university", name="university", placeholder="University of Cincinnati", ng-model="uni")
-			div.form-group(ng-show="uni == 'University of Cincinnati'")
-				label.col-sm-2.control-label(for="college") College
-				div.col-sm-10
-					input.form-control#college(type="text", placeholder="DAAP, CEAS, CECH, etc.")
-			div.form-group
-				label.col-sm-2.control-label(for="major") Major
-				div.col-sm-10
-					input.form-control#major(type="text", placeholder="Sith Lord")
-			div.form-group
-				label.col-sm-2.control-label(for="gender") Gender
-				div.col-sm-10
-					select.form-control#gender
-						option(value="" disabled selected) I identify my gender as...
-						option(value="0") Male
-						option(value="1") Female
-						option(value="2") Other
-						div.form-group
-				label.col-sm-2.control-label(for="bio") About/Bio
-				div.col-sm-10
-					textarea.form-control#bio(rows="4", placeholder="Include links and a little bit about yourself.")
-			div.form-group
-				label.col-sm-2.control-label(for="diet") Diet
-				div.col-sm-10
-					input.form-control#diet(type="text", placeholder="Gluten free, Vegetarian, Eggs, and Tomatoes")
-			div.form-group
-				label.col-sm-2.control-label(for="resume") Resumé
-				div.col-sm-10
-	    		input#resume(type="file")
-					p.help-block Upload your resumé!
-			div(style="text-align: center; margin: 0 0 100 0")
-				button.btn.btn-primary.btn-lg(style="margin: 5 5 50 5;", ng-click="close()") I wanna go!
-				button.btn.btn-warning.btn-lg(style="margin:5px;") I changed my mind.	
-		div(style="height: 20px; width: 100%; background-color: black; opacity: 0")
+				input.form-control(type="email", id="email", placeholder="dvader@mail.uc.edu")
+		div.form-group
+			label.col-sm-2.control-label(for="university") University
+			div.col-sm-10
+				input.form-control(type="text", id="university", name="university", placeholder="University of Cincinnati", ng-model="uni")
+		div.form-group(ng-show="uni == 'University of Cincinnati'")
+			label.col-sm-2.control-label(for="college") College
+			div.col-sm-10
+				input.form-control#college(type="text", placeholder="DAAP, CEAS, CECH, etc.")
+		div.form-group
+			label.col-sm-2.control-label(for="major") Major
+			div.col-sm-10
+				input.form-control#major(type="text", placeholder="Sith Lord")
+		div.form-group
+			label.col-sm-2.control-label(for="gender") Gender
+			div.col-sm-10
+				select.form-control#gender
+					option(value="" disabled selected) I identify my gender as...
+					option(value="0") Male
+					option(value="1") Female
+					option(value="2") Other
+		div.form-group
+			label.col-sm-2.control-label(for="bio") About/Bio
+			div.col-sm-10
+				textarea.form-control#bio(rows="4", placeholder="Include links and a little bit about yourself.")
+		div.form-group
+			label.col-sm-2.control-label(for="diet") Diet
+			div.col-sm-10
+				input.form-control#diet(type="text", placeholder="Gluten free, Vegetarian, Eggs, and Tomatoes")
+		div.form-group
+			label.col-sm-2.control-label(for="resume") Resume
+			div.col-sm-10
+				input#resume(type="file")
+				p.help-block Upload your resumé!
+		div(style="text-align: center; margin: 0 0 100 0")
+			button.btn.btn-primary.btn-lg(style="margin: 5 5 50 5;", ng-click="close()") I wanna go!
+		button.btn.btn-warning.btn-lg(style="margin:5px;") I changed my mind.	
+	div(style="height: 20px; width: 100%; background-color: black; opacity: 0")
