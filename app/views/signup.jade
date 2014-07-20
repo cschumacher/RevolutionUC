@@ -6,7 +6,7 @@ br
 		div.form-group
 			label.col-sm-2.control-label(for="name") Name
 			div.col-sm-10
-				input.form-control(type="text" id="name" placeholder="Darth Vader")
+				input.form-control#name(type="text", placeholder="Darth Vader")
 			div.form-group
 				label.col-sm-2.control-label(for="email") Email
 				div.col-sm-10
@@ -18,42 +18,33 @@ br
 			div.form-group.animate-show(ng-show="uni == 'University of Cincinnati'")
 				label.col-sm-2.control-label(for="college") College
 				div.col-sm-10
-					input.form-control type="text" class="form-control" id="college" placeholder="DAAP, CEAS, CECH, etc.">
+					input.form-control#college(type="text" placeholder="DAAP, CEAS, CECH, etc.")
 			div.form-group
 				label.col-sm-2.control-label(for="major") Major
 				div.col-sm-10
-					<input type="text" class="form-control" id="major" placeholder="Sith Lord">
+					input.form-control#major(type="text" placeholder="Sith Lord")
 			div.form-group
 				label.col-sm-2.control-label(for="gender") Gender
 				div.col-sm-10
-					<select class="form-control" id="gender">
-						<option value="" disabled selected>I identify my gender as...</option>
-						<option value="0">Male</option>
-						<option value="1">Female</option>
-						<option value="2">Other</option>
-			div.form-group
+					select.form-control#gender
+						option(value="" disabled selected) I identify my gender as...
+						option(value="0") Male
+						option(value="1") Female
+						option(value="2") Other
+						div.form-group
 				label.col-sm-2.control-label(for="bio") About/Bio
 				div.col-sm-10
-					<textarea class="form-control" id="bio" rows="4" placeholder="Include links and a little bit about yourself."></textarea>
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="diet" class="col-sm-2 control-label">Dietary Restrictions</label>
+					textarea.form-control#bio(rows="4", placeholder="Include links and a little bit about yourself.")
+			div.form-group
+				label(for="diet" class="col-sm-2 control-label") Dietary Restrictions
 				div.col-sm-10
-					<input type="text" class="form-control" id="diet" placeholder="Gluten free, Vegetarian, Eggs, and Tomatoes">
-				</div>
-			</div>
-			<div class="form-group">
-				<label for="resume" class="col-sm-2 control-label">Resumé</label>
+					input.form-control#diet(type="text" placeholder="Gluten free, Vegetarian, Eggs, and Tomatoes")
+			div.form-group
+				label.col-sm-2.control-label(for="resume") Resumé
 				div.col-sm-10
-	    			<input type="file" id="resume">
-    				<p class="help-block">Upload your resumé!</p>	
-				</div>
-			</div>
-			<div style="text-align: center; margin: 0 0 100 0">
-				<button class="btn btn-primary btn-lg" style="margin: 5 5 50 5;" ng-click="close();">I wanna go!</button>
-				<button class="btn btn-warning btn-lg" style="margin:5px;">I changed my mind.</button>	
-			</div>
-		</form>
-		<div style="height: 20px; width: 100%; background-color: black; opacity: 0"></div>
-	</div>
+	    		input#resume(type="file")
+					p.help-block Upload your resumé!
+			div(style="text-align: center; margin: 0 0 100 0")
+				button.btn.btn-primary.btn-lg(style="margin: 5 5 50 5;", ng-click="close()") I wanna go!
+				button.btn.btn-warning.btn-lg(style="margin:5px;") I changed my mind.	
+		div(style="height: 20px; width: 100%; background-color: black; opacity: 0")
