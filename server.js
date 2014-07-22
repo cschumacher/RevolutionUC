@@ -3,7 +3,8 @@
 var express = require('express'),
 		app = express(),
 		port = 3000,
-		path = require('path');
+		path = require('path'),
+		mongoose = require('mongoose');
 
 require('./app/routes')(app);
 
